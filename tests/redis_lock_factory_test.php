@@ -39,7 +39,7 @@ use local_redislock\api\shared_redis_connection;
 
 class local_redislock_redis_lock_factory_test extends \advanced_testcase {
 
-    public function setUp() {
+    public function setUp(): void {
         global $CFG;
 
         $this->resetAfterTest();

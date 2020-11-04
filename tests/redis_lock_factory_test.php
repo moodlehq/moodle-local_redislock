@@ -52,7 +52,7 @@ class local_redislock_redis_lock_factory_test extends \advanced_testcase {
     /**
      * @throws coding_exception
      */
-    protected function tearDown() {
+    protected function tearDown(): void {
         shared_redis_connection::get_instance()->close();
         while (!empty(shared_redis_connection::get_instance()->get_factory_count())) {
             shared_redis_connection::get_instance()->remove_factory();

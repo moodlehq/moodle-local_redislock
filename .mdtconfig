@@ -1,0 +1,4 @@
+MDTCOMPONENT=local_redislock
+MDTRELPATH=local/redislock/
+MDTEXPORT=origin/custom
+
